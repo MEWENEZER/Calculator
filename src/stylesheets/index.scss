@@ -1,0 +1,97 @@
+$color-light: #f1f5f9;
+$color-night: #334155;
+
+$button-color: #36597d;
+$button-hover-color: #94a3b8;
+
+* {
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Jost', sans-serif;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  justify-content: center;
+
+  grid-template-columns: repeat(4, 80px);
+  gap: 20px 20px;
+}
+
+.container {
+  width: 430px;
+  height: 757px;
+
+  padding: 25px 30px;
+  margin: 0 auto;
+
+  background: $color-light;
+}
+
+#neg {
+  background: url(/src/img/Vector.svg) no-repeat center;
+}
+
+#equ {
+  grid-row: span 2;
+}
+
+.button {
+  //   all: unset;
+  min-width: 80px;
+  min-height: 80px;
+
+  font-size: 24px;
+  cursor: pointer;
+
+  text-align: center;
+
+  color: $button-color;
+
+  background: #f1f5f9;
+  box-shadow: 8px 8px 16px #c9d9e8, -8px -8px 16px #ffffff;
+  border-radius: 24px;
+  border: 1px solid transparent;
+
+  &:active {
+    box-shadow: inset 8px 8px 16px #c9d9e8, inset -8px -8px 16px #ffffff;
+  }
+
+  &:hover {
+    border: 1px solid $button-hover-color;
+  }
+}
+
+.title {
+  font-size: 24px;
+  color: $color-night;
+}
+
+.outPutSubTitle {
+  margin-top: 30px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: right;
+
+  color: #94a3b8;
+}
+
+.outPutTitle {
+  margin-bottom: 30px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+
+  text-align: right;
+
+  color: #334155;
+}
