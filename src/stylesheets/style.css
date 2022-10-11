@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: "Jost", sans-serif;
+  font-family: 'Jost', sans-serif;
   margin: 0 auto;
   background: #f1f5f9;
 }
@@ -31,6 +31,17 @@ body {
 
 #equ {
   grid-row: span 2;
+}
+
+div {
+  width: 100%;
+  border: none;
+  background: none;
+  pointer-events: none;
+  cursor: default;
+}
+div:focus {
+  outline: none;
 }
 
 .button {
@@ -69,6 +80,7 @@ body {
   font-size: 72px;
   text-align: right;
   color: #334155;
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */

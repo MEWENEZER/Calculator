@@ -42,6 +42,19 @@ body {
   grid-row: span 2;
 }
 
+.input {
+  width: 100%;
+  border: none;
+  background: none;
+
+  pointer-events: none;
+  cursor: default;
+
+  &:focus {
+    outline: none;
+  }
+}
+
 .button {
   //   all: unset;
   min-width: 80px;
@@ -89,4 +102,6 @@ body {
   text-align: right;
 
   color: #334155;
+
+  overflow: hidden;
 }
