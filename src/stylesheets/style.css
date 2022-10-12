@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: "Jost", sans-serif;
+  font-family: 'Jost', sans-serif;
   margin: 0 auto;
   background: #f1f5f9;
 }
@@ -76,5 +76,3 @@ body {
 .calculator .calculator__button-width {
   grid-column: span 2;
 }
-
-/*# sourceMappingURL=style.css.map */
