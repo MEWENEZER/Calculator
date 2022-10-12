@@ -1,8 +1,7 @@
-$color-light: #f1f5f9;
-$color-night: #334155;
-
-$button-color: #36597d;
-$button-hover-color: #94a3b8;
+$primary-color-light: #f1f5f9;
+$primary-color-night: #334155;
+$text-color-light: #36597d;
+$text-color-night: #94a3b8;
 
 * {
   box-sizing: border-box;
@@ -15,7 +14,7 @@ body {
   font-family: 'Jost', sans-serif;
   margin: 0 auto;
 
-  background: $color-light;
+  background: $primary-color-light;
 }
 
 .grid {
@@ -28,34 +27,25 @@ body {
 
 .container {
   width: 430px;
-  height: 757px;
-
-  padding: 25px 30px;
-  margin: 0 auto;
+  padding: 30px 25px;
 }
 
-#neg {
-  background: url(/src/img/Vector.svg) no-repeat center;
-}
+.calculator__panel {
+  text-align: right;
+  margin: 30px 0px;
 
-#equ {
-  grid-row: span 2;
-}
+  &-decision {
+    font-size: 16px;
+    color: $text-color-night;
+  }
 
-.input {
-  width: 100%;
-  border: none;
-  background: none;
-
-  pointer-events: none;
-  cursor: default;
-
-  &:focus {
-    outline: none;
+  &-result {
+    font-size: 72px;
+    color: $primary-color-night;
   }
 }
 
-.button {
+.calculator__button {
   //   all: unset;
   min-width: 80px;
   min-height: 80px;
@@ -65,9 +55,8 @@ body {
 
   text-align: center;
 
-  color: $button-color;
+  color: $text-color-light;
 
-  background: #f1f5f9;
   box-shadow: 8px 8px 16px #c9d9e8, -8px -8px 16px #ffffff;
   border-radius: 24px;
   border: 1px solid transparent;
@@ -77,31 +66,14 @@ body {
   }
 
   &:hover {
-    border: 1px solid $button-hover-color;
+    border: 1px solid $text-color-light;
   }
-}
 
-.title {
-  font-size: 24px;
-  color: $color-night;
-}
+  &-delete {
+    background: url(/src/img/Vector.svg) no-repeat center;
+  }
 
-.outPutSubTitle {
-  margin-top: 30px;
-
-  font-size: 16px;
-  text-align: right;
-
-  color: #94a3b8;
-}
-
-.outPutTitle {
-  margin-bottom: 30px;
-
-  font-size: 72px;
-  text-align: right;
-
-  color: #334155;
-
-  overflow: hidden;
+  &-long {
+    grid-row: span 2;
+  }
 }
