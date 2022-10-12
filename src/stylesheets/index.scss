@@ -30,61 +30,63 @@ body {
   padding: 30px 25px;
 }
 
-.calculator__title {
-  font-size: 24px;
-  color: $primary-color-night;
-}
-
-.calculator__panel {
-  text-align: right;
-  margin: 30px 0px;
-
-  &-decision {
-    font-size: 16px;
-    color: $text-color-night;
-  }
-
-  &-result {
-    font-size: 72px;
+.calculator {
+  .calculator__title {
+    font-size: 24px;
     color: $primary-color-night;
   }
-}
 
-.calculator__button {
-  //   all: unset;
-  min-width: 80px;
-  min-height: 80px;
+  .calculator__panel {
+    text-align: right;
+    margin: 30px 0px;
 
-  font-size: 24px;
-  cursor: pointer;
+    &-decision {
+      font-size: 16px;
+      color: $text-color-night;
+    }
 
-  text-align: center;
-
-  color: $text-color-light;
-
-  box-shadow: 8px 8px 16px #c9d9e8, -8px -8px 16px #ffffff;
-  border-radius: 24px;
-  border: 1px solid transparent;
-
-  &:active {
-    box-shadow: inset 8px 8px 16px #c9d9e8, inset -8px -8px 16px #ffffff;
+    &-result {
+      font-size: 72px;
+      color: $primary-color-night;
+    }
   }
 
-  &:hover {
-    border: 1px solid $text-color-light;
-  }
+  .calculator__button {
+    //   all: unset;
+    min-width: 80px;
+    min-height: 80px;
 
-  &-delete {
-    background: url(/src/img/Vector.svg) no-repeat center;
-  }
+    font-size: 24px;
+    cursor: pointer;
 
-  &-long {
-    grid-row: span 2;
-    color: $text-color-night;
-    background-color: $primary-color-night;
+    text-align: center;
+
+    color: $text-color-light;
+
+    box-shadow: 8px 8px 16px #c9d9e8, -8px -8px 16px #ffffff;
+    border-radius: 24px;
+    border: 1px solid transparent;
+
+    &:active {
+      box-shadow: inset 8px 8px 16px #c9d9e8, inset -8px -8px 16px #ffffff;
+    }
 
     &:hover {
-      border: 1px solid $text-color-night;
+      border: 1px solid $text-color-light;
+    }
+
+    &-delete {
+      background: url(/src/img/Vector.svg) no-repeat center;
+    }
+
+    &-long {
+      grid-row: span 2;
+      color: $text-color-night;
+      background-color: $primary-color-night;
+
+      &:hover {
+        border: 1px solid $text-color-night;
+      }
     }
   }
 }

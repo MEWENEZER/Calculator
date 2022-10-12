@@ -23,25 +23,23 @@ body {
   padding: 30px 25px;
 }
 
-.calculator__title {
+.calculator .calculator__title {
   font-size: 24px;
   color: #334155;
 }
-
-.calculator__panel {
+.calculator .calculator__panel {
   text-align: right;
   margin: 30px 0px;
 }
-.calculator__panel-decision {
+.calculator .calculator__panel-decision {
   font-size: 16px;
   color: #94a3b8;
 }
-.calculator__panel-result {
+.calculator .calculator__panel-result {
   font-size: 72px;
   color: #334155;
 }
-
-.calculator__button {
+.calculator .calculator__button {
   min-width: 80px;
   min-height: 80px;
   font-size: 24px;
@@ -52,21 +50,21 @@ body {
   border-radius: 24px;
   border: 1px solid transparent;
 }
-.calculator__button:active {
+.calculator .calculator__button:active {
   box-shadow: inset 8px 8px 16px #c9d9e8, inset -8px -8px 16px #ffffff;
 }
-.calculator__button:hover {
+.calculator .calculator__button:hover {
   border: 1px solid #36597d;
 }
-.calculator__button-delete {
+.calculator .calculator__button-delete {
   background: url(/src/img/Vector.svg) no-repeat center;
 }
-.calculator__button-long {
+.calculator .calculator__button-long {
   grid-row: span 2;
   color: #94a3b8;
   background-color: #334155;
 }
-.calculator__button-long:hover {
+.calculator .calculator__button-long:hover {
   border: 1px solid #94a3b8;
 }
 
