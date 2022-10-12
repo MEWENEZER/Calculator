@@ -23,41 +23,58 @@ body {
   padding: 30px 25px;
 }
 
-.calculator__panel {
-  text-align: right;
-  margin: 30px 0px;
-}
-.calculator__panel-decision {
-  font-size: 16px;
-  color: #94a3b8;
-}
-.calculator__panel-result {
-  font-size: 72px;
+.calculator .calculator__title {
+  font-size: 24px;
   color: #334155;
 }
-
-.calculator__button {
+.calculator .calculator__panel {
+  text-align: right;
+  margin: 30px 0px;
+  height: 130px;
+}
+.calculator .calculator__panel-decision {
+  font-size: 16px;
+  color: #94a3b8;
+  height: 25px;
+}
+.calculator .calculator__panel-result {
+  font-size: 72px;
+  color: #334155;
+  height: 105px;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+.calculator .calculator__button {
   min-width: 80px;
   min-height: 80px;
   font-size: 24px;
   cursor: pointer;
   text-align: center;
   color: #36597d;
+  background-color: #f1f5f9;
   box-shadow: 8px 8px 16px #c9d9e8, -8px -8px 16px #ffffff;
   border-radius: 24px;
   border: 1px solid transparent;
 }
-.calculator__button:active {
+.calculator .calculator__button:active {
   box-shadow: inset 8px 8px 16px #c9d9e8, inset -8px -8px 16px #ffffff;
 }
-.calculator__button:hover {
+.calculator .calculator__button:hover {
   border: 1px solid #36597d;
 }
-.calculator__button-delete {
-  background: url(/src/img/Vector.svg) no-repeat center;
-}
-.calculator__button-long {
+.calculator .calculator__button-long {
   grid-row: span 2;
+  color: #94a3b8;
+  background-color: #334155;
+}
+.calculator .calculator__button-long:active {
+  box-shadow: inset 8px 8px 16px #263140, inset -8px -8px 16px #394960;
+}
+.calculator .calculator__button-long:hover {
+  border: 1px solid #94a3b8;
+}
+.calculator .calculator__button-width {
+  grid-column: span 2;
 }
 
 /*# sourceMappingURL=style.css.map */

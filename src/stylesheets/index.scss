@@ -30,50 +30,76 @@ body {
   padding: 30px 25px;
 }
 
-.calculator__panel {
-  text-align: right;
-  margin: 30px 0px;
-
-  &-decision {
-    font-size: 16px;
-    color: $text-color-night;
-  }
-
-  &-result {
-    font-size: 72px;
+.calculator {
+  .calculator__title {
+    font-size: 24px;
     color: $primary-color-night;
   }
-}
 
-.calculator__button {
-  //   all: unset;
-  min-width: 80px;
-  min-height: 80px;
+  .calculator__panel {
+    text-align: right;
+    margin: 30px 0px;
+    height: 130px;
 
-  font-size: 24px;
-  cursor: pointer;
+    &-decision {
+      font-size: 16px;
+      color: $text-color-night;
 
-  text-align: center;
+      height: 25px;
+    }
 
-  color: $text-color-light;
+    &-result {
+      font-size: 72px;
+      color: $primary-color-night;
 
-  box-shadow: 8px 8px 16px #c9d9e8, -8px -8px 16px #ffffff;
-  border-radius: 24px;
-  border: 1px solid transparent;
+      height: 105px;
 
-  &:active {
-    box-shadow: inset 8px 8px 16px #c9d9e8, inset -8px -8px 16px #ffffff;
+      word-wrap: break-word;
+      overflow: hidden;
+    }
   }
 
-  &:hover {
-    border: 1px solid $text-color-light;
-  }
+  .calculator__button {
+    //   all: unset;
+    min-width: 80px;
+    min-height: 80px;
 
-  &-delete {
-    background: url(/src/img/Vector.svg) no-repeat center;
-  }
+    font-size: 24px;
+    cursor: pointer;
 
-  &-long {
-    grid-row: span 2;
+    text-align: center;
+
+    color: $text-color-light;
+    background-color: $primary-color-light;
+
+    box-shadow: 8px 8px 16px #c9d9e8, -8px -8px 16px #ffffff;
+    border-radius: 24px;
+    border: 1px solid transparent;
+
+    &:active {
+      box-shadow: inset 8px 8px 16px #c9d9e8, inset -8px -8px 16px #ffffff;
+    }
+
+    &:hover {
+      border: 1px solid $text-color-light;
+    }
+
+    &-long {
+      grid-row: span 2;
+      color: $text-color-night;
+      background-color: $primary-color-night;
+
+      &:active {
+        box-shadow: inset 8px 8px 16px #263140, inset -8px -8px 16px #394960;
+      }
+
+      &:hover {
+        border: 1px solid $text-color-night;
+      }
+    }
+
+    &-width {
+      grid-column: span 2;
+    }
   }
 }
