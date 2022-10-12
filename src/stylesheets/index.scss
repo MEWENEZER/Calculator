@@ -84,6 +84,10 @@ body {
       color: $text-color-night;
       background-color: $primary-color-night;
 
+      &:active {
+        box-shadow: inset 8px 8px 16px #263140, inset -8px -8px 16px #394960;
+      }
+
       &:hover {
         border: 1px solid $text-color-night;
       }

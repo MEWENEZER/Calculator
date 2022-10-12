@@ -64,6 +64,9 @@ body {
   color: #94a3b8;
   background-color: #334155;
 }
+.calculator .calculator__button-long:active {
+  box-shadow: inset 8px 8px 16px #263140, inset -8px -8px 16px #394960;
+}
 .calculator .calculator__button-long:hover {
   border: 1px solid #94a3b8;
 }
