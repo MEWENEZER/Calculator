@@ -62,9 +62,6 @@ body {
 .calculator .calculator__button:hover {
   border: 1px solid #36597d;
 }
-.calculator .calculator__button-delete {
-  background: url(/src/img/Vector.svg) no-repeat center;
-}
 .calculator .calculator__button-long {
   grid-row: span 2;
   color: #94a3b8;
@@ -75,6 +72,9 @@ body {
 }
 .calculator .calculator__button-long:hover {
   border: 1px solid #94a3b8;
+}
+.calculator .calculator__button-width {
+  grid-column: span 2;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -84,10 +84,6 @@ body {
       border: 1px solid $text-color-light;
     }
 
-    &-delete {
-      background: url(/src/img/Vector.svg) no-repeat center;
-    }
-
     &-long {
       grid-row: span 2;
       color: $text-color-night;
@@ -100,6 +96,10 @@ body {
       &:hover {
         border: 1px solid $text-color-night;
       }
+    }
+
+    &-width {
+      grid-column: span 2;
     }
   }
 }
