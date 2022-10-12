@@ -17,7 +17,8 @@ for (let button of buttons) {
       resetVars();
     }
 
-    if (buttonValue === '=' || secondNumber !== 0) {
+    if (buttonValue === '=' && secondNumber.length !== 0) {
+      panelDecision.textContent = panelResult.textContent;
       switch (operator) {
         case '+':
           panelResult.textContent = +firstNumber + +secondNumber;
@@ -31,7 +32,11 @@ for (let button of buttons) {
         case '÷':
           panelResult.textContent = firstNumber / secondNumber;
           break;
+        case '%':
+          panelResult.textContent = (firstNumber / 100) * secondNumber;
+          break;
       }
+      resetVars();
     }
 
     if (buttonValue === '.') {

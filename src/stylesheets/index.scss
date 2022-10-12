@@ -44,11 +44,18 @@ body {
     &-decision {
       font-size: 16px;
       color: $text-color-night;
+
+      height: 25px;
     }
 
     &-result {
       font-size: 72px;
       color: $primary-color-night;
+
+      height: 105px;
+
+      word-wrap: break-word;
+      overflow: hidden;
     }
   }
 
