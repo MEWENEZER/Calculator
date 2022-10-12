@@ -11,12 +11,10 @@ for (let button of buttons) {
     let buttonValue = button.textContent;
 
     if (buttonValue === 'C') {
-      firstNumber = '';
-      secondNumber = '';
-      operator = '';
-
       panelResult.textContent = '';
       panelDecision.textContent = '';
+
+      resetVars();
     }
 
     if (buttonValue === '=' || secondNumber !== 0) {
@@ -36,7 +34,21 @@ for (let button of buttons) {
       }
     }
 
-    if (button.classList.contains('number') || buttonValue === '.') {
+    if (buttonValue === '.') {
+      let number = operator.length > 0 ? secondNumber : firstNumber;
+
+      if (number.length === 0 || number.includes('.')) {
+        return;
+      }
+
+      if (operator.length > 0) {
+        secondNumber += buttonValue;
+      } else {
+        firstNumber += buttonValue;
+      }
+    }
+
+    if (button.classList.contains('number')) {
       if (operator.length > 0) {
         secondNumber += buttonValue;
       } else {
@@ -54,4 +66,10 @@ for (let button of buttons) {
 
     panelResult.textContent = `${firstNumber} ${operator} ${secondNumber}`;
   };
+}
+
+function resetVars() {
+  firstNumber = '';
+  secondNumber = '';
+  operator = '';
 }
