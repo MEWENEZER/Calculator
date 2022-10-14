@@ -11,42 +11,42 @@ body {
   background: #f1f5f9;
 }
 
-.grid {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: repeat(4, 80px);
-  gap: 20px 20px;
-}
-
 .container {
   width: 430px;
   padding: 30px 25px;
 }
 
-.calculator .calculator__title {
+.grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, 80px);
+  grid-template-rows: repeat(5, 80px);
+  gap: 20px 20px;
+}
+
+.calculator__title {
   font-size: 24px;
   color: #334155;
 }
-.calculator .calculator__panel {
+
+.calculator__panel {
   text-align: right;
   margin: 30px 0px;
-  height: 130px;
 }
-.calculator .calculator__panel-decision {
+.calculator__panel-decision {
   font-size: 16px;
   color: #94a3b8;
   height: 25px;
 }
-.calculator .calculator__panel-result {
+.calculator__panel-result {
   font-size: 72px;
   color: #334155;
   height: 105px;
   word-wrap: break-word;
   overflow: hidden;
 }
-.calculator .calculator__button {
-  min-width: 80px;
-  min-height: 80px;
+
+.calculator__button {
   font-size: 24px;
   cursor: pointer;
   text-align: center;
@@ -56,25 +56,51 @@ body {
   border-radius: 24px;
   border: 1px solid transparent;
 }
-.calculator .calculator__button:active {
+.calculator__button:active {
   box-shadow: inset 8px 8px 16px #c9d9e8, inset -8px -8px 16px #ffffff;
 }
-.calculator .calculator__button:hover {
+.calculator__button:hover {
   border: 1px solid #36597d;
 }
-.calculator .calculator__button-long {
+.calculator__button-long {
+  height: 100%;
   grid-row: span 2;
   color: #94a3b8;
   background-color: #334155;
 }
-.calculator .calculator__button-long:active {
+.calculator__button-long:active {
   box-shadow: inset 8px 8px 16px #263140, inset -8px -8px 16px #394960;
 }
-.calculator .calculator__button-long:hover {
+.calculator__button-long:hover {
   border: 1px solid #94a3b8;
 }
-.calculator .calculator__button-width {
+.calculator__button-width {
   grid-column: span 2;
+  width: 100%;
+}
+
+@media screen and (max-width: 1400px) {
+  .container {
+    width: 390px;
+  }
+  .grid {
+    grid-template-columns: repeat(4, 70px);
+    grid-template-rows: repeat(5, 70px);
+  }
+  .calculator__title {
+    font-size: 20px;
+  }
+  .calculator__panel {
+    margin: 20px 0px;
+  }
+  .calculator__panel-result {
+    font-size: 64px;
+    color: #334155;
+    height: 92px;
+  }
+  .calculator__panel .calculator__button {
+    font-size: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
